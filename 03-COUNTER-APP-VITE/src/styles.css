@@ -1,0 +1,14 @@
+html,
+body {
+    background-color: #21232A;
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.1rem;
+    padding: 24px;
+}
+
+button {
+    padding: 8px;
+    font-size: 1.1rem;
+    margin-right: 8px;
+}
