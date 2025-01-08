@@ -1,6 +1,12 @@
-import { test } from 'vitest'
+import { expect, test } from 'vitest';
 
 
-test('should first', () => {
+test('Esta prueba no debe fallar', () => {
+    // 1. Inicializacion
+    const message1 = 'Hola Mundo';
+    // 2. Estimulo
+    const message2 = message1.trim();
+    // 3. Observar el comportamiento esperado
+    expect(message1).toBe(message2);
 
 })

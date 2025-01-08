@@ -20,7 +20,7 @@ const [letras, numeros] = getArr();
 // 2. El segundo setNombre
 const userState = (valor) => {
     return [valor, () => {
-        console.log('Hola Mundo');
+        // console.log('Hola Mundo');
     }]
 }
 

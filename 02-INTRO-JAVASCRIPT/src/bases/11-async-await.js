@@ -1,5 +1,6 @@
 // * ASYNC / AWAIT
 
+
 export const getImage = async () => {
     const apiKey = process.env.REACT_APP_GPHY_API_KEY;
 
@@ -8,14 +9,16 @@ export const getImage = async () => {
     try {
         const resp = await fetch(urlBase);
         const { data } = await resp.json();
+
+
         const { url } = data.images.original;
-        const img = document.createElement('img');
-        img.src = url;
-        document.body.append(img);
+        // const img = document.createElement('img');
+        // img.src = url;
+        // document.body.append(img);
         return url;
     } catch (error) {
         // console.error(error);
-        return 'No se encotro la imagen'
+        return 'No se encotro la imagen';
     }
 
 }
