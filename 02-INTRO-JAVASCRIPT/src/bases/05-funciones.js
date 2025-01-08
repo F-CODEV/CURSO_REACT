@@ -24,7 +24,7 @@ const saludar4 = () => `Hola Mundo`;
 // console.log(saludar2('Vegeta'));
 // console.log(saludar4());
 
-const getUser = () => {
+export const getUser = () => {
     return {
         uid: 'ABC123',
         username: 'fcodev',
@@ -33,7 +33,7 @@ const getUser = () => {
 // ? Forma corta de regresar un objeto
 const getUser2 = () => ({ uid: 'ABC123', username: 'fcodev' });
 const user = getUser2();
-console.log(user);
+// console.log(user);
 
 // Tarea
 // 1. funcion de flecha
@@ -46,10 +46,10 @@ console.log(user);
 //     }
 // }
 
-const getActiveUser = (username) => ({ uid: 'ABC123', username: username });
+export const getActiveUser = (username) => ({ uid: 'ABC123', username: username });
 
 const activeUser = getActiveUser('fcodev.hola');
-console.log(activeUser);
+// console.log(activeUser);
 
 
 

@@ -8,7 +8,7 @@ const personajes = ['Goku', 'Vegeta', 'Trunks'];
 const [, , p3] = personajes;
 // console.log(p3);
 
-const getArr = () => {
+export const getArr = () => {
     return ['ABC', 123];
 }
 

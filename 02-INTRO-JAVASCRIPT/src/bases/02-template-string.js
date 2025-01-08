@@ -13,11 +13,11 @@ ${1 + 1}
 `;
 
 
-console.log(nombreCompleto);
-console.log(nombreCompletoV2);
+// console.log(nombreCompleto);
+// console.log(nombreCompletoV2);
 
 // ? Cualquier variable que no iniciemos tendrá undefined
-function getSaludo(nombre) {
+export function getSaludo(nombre) {
     return `Hola, ${nombre}`;
 }
-console.log(`Este es un texto: ${getSaludo(nombre)}`);
+// console.log(`Este es un texto: ${getSaludo(nombre)}`);

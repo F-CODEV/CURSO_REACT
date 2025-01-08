@@ -17,7 +17,7 @@ const { nombre: name, edad, clave } = persona;
 // console.log(clave);
 // ? Se pueden desestructurar los parametros de la funcion
 // ? Asignar valores por defecto
-const userContext = ({ nombre, edad, rango = 'Capitán', clave }) => {
+export const userContext = ({ nombre, edad, rango = 'Capitán', clave }) => {
 
     // console.log(nombre, edad, rango);
     return {
@@ -35,8 +35,8 @@ const userContext = ({ nombre, edad, rango = 'Capitán', clave }) => {
 // const { nombreClave, anios, latlng: { lat, lng } } = userContext(persona);
 const { nombreClave, anios, latlng } = userContext(persona);
 const { lat, lng } = latlng;
-console.log(nombreClave, anios);
-console.log(lat, lng);
+// console.log(nombreClave, anios);
+// console.log(lat, lng);
 
 
 

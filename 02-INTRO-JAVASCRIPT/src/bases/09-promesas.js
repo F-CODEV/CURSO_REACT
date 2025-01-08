@@ -1,4 +1,4 @@
-import { getHeroById } from "./bases/08-imp-exp";
+import { getHeroById } from "./08-imp-exp";
 
 
 // * PROMESAS
@@ -20,7 +20,7 @@ import { getHeroById } from "./bases/08-imp-exp";
 //     console.warn(err);
 // });
 
-const getHeroByIdAsync = (id) => {
+export const getHeroByIdAsync = (id) => {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             const hero = getHeroById(id);
@@ -35,9 +35,9 @@ const getHeroByIdAsync = (id) => {
     });
 }
 // ? Si la funcion tiene un solo parametro y solo 1 se recibe
-getHeroByIdAsync(1)
-    .then(console.log)
-    .catch(console.warn);
+// getHeroByIdAsync(1)
+//     .then(console.log)
+//     .catch(console.warn);
 
 
 
