@@ -25,7 +25,9 @@ export const CounterApp = ({ value }: CounterAppProps) => {
             {/* Forma Corta */}
             <button onClick={handleAdd}>+1</button>
             <button onClick={handleSubtract}>-1</button>
-            <button onClick={handleReset}>Reset</button>
+            <button onClick={handleReset}
+                aria-label="btn-reset"
+            >Reset</button>
         </>
     )
 }

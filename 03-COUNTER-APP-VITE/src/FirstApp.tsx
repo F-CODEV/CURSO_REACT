@@ -15,14 +15,14 @@ const getResult = (a: number, b: number) => {
 export const FirstApp = ({
     title = defaultProps.title,
     subtitle = defaultProps.subtitle,
-    name
+    name = defaultProps.name,
 }: FirstAppProps) => {
-    console.log(title);
+    // console.log(title);
 
     return (
         <>
             {/* <h1>{getResult(1, 2)}</h1> */}
-            <h1>{title}</h1>
+            <h1 data-testid="test-title">{title}</h1>
             {/* <code>{JSON.stringify(newMessage)}</code> */}
             <p>{subtitle}</p>
             <p>{name}</p>
@@ -33,11 +33,11 @@ export const FirstApp = ({
 export interface FirstAppProps {
     title?: string
     subtitle?: string,
-    name: string,
+    name?: string,
 }
 
 const defaultProps: FirstAppProps = {
     title: 'No hay titulo',
     subtitle: 'No hay subtitulo',
-    name: '',
+    name: 'No hay nombre',
 }
