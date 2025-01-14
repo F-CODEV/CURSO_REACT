@@ -7,7 +7,7 @@ export interface HijoProps {
 
 export const Hijo = React.memo(({ numero, incrementar }: HijoProps) => {
 
-    console.log('  Me volví a generar :(  ');
+    // console.log('  Me volví a generar :(  ');
 
     return (
         <button

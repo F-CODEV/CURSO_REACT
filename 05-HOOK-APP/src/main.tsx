@@ -1,11 +1,15 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import { Padre } from './07-tarea-memo/Padre'
-import './index.css'
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import { BrowserRouter } from "react-router";
+
+import { MainApp } from './09-useContext/MainApp';
+import './index.css';
 
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <Padre />
+    <BrowserRouter>
+      <MainApp />
+    </BrowserRouter>
   </StrictMode>,
 )
