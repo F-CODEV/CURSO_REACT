@@ -9,9 +9,9 @@ export const LoginPage = () => {
 
     return (
         <>
-            <h1>Login</h1>
+            <h1>Login Page</h1>
             <hr />
-            <pre>
+            <pre aria-label="pre">
                 {JSON.stringify(user, null, 3)}
             </pre>
             <button className="btn btn-primary"

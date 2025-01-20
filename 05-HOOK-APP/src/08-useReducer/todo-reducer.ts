@@ -7,7 +7,8 @@ export interface TodoI {
 export enum ActionType {
     add = '[TODO] add todo',
     delete = '[TODO] delete todo',
-    toggle = '[TODO] toggle todo'
+    toggle = '[TODO] toggle todo',
+    other = '[TODO] no defines'
 
 }
 
