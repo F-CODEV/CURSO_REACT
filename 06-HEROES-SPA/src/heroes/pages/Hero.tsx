@@ -11,7 +11,7 @@ export const Hero = () => {
     const onNavigateBack = () => {
         // ? Navegar en el historial hacia atras
         // ! Puede sacar al usuario de la app
-        navigate(-1);
+        navigate("/marvel");
     }
     if (!hero) {
         // return <h1>Hero not found</h1>;
@@ -23,7 +23,7 @@ export const Hero = () => {
         <div className="row mt-5">
             <div className="col-4">
                 <img
-                    src={`/assets/heroes/${hero.id}.jpg`}
+                    src={`/heroes/${hero.id}.jpg`}
                     alt={hero.superhero}
                     className="img-thumbnail animate__animated animate__fadeInLeft"
                 />

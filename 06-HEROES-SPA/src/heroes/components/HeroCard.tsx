@@ -9,7 +9,7 @@ export const HeroCard = ({
     return (
         <Link to={`/hero/${id}`} className="my-card animate__animated animate__fadeIn">
             <img
-                src={`./assets/heroes/${id}.jpg`}
+                src={`/heroes/${id}.jpg`}
                 className="img img-responsive"
                 alt={superhero}
             />
